@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | AMBE Cargo Packers and Movers</title>
+<meta name="description" content="Explore AMBE Cargo Packers and Movers services including household shifting, office relocation, packing, transportation, loading and unloading in Amritsar.">
+
+<style>
+:root{
+  --navy:#092b54;
+  --blue:#123e70;
+  --red:#e51d2a;
+  --green:#0ba64a;
+  --ink:#122b4c;
+  --muted:#5e6b7b;
+  --pale:#f2f7fc;
+  --line:#dce5ef;
+  --white:#fff;
+  --shadow:0 8px 24px #092b5412;
+  --shadow-hover:0 18px 38px rgba(9,43,84,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+.wrap{width:min(1160px,92%);margin:auto}
+
+/* ===== SAME HEADER STYLE ===== */
+.topbar{
+  height:76px;background:#fff;display:flex;align-items:center;
+  justify-content:space-between;gap:22px;position:relative;z-index:100;
+  box-shadow:0 2px 10px #0a2c5010
+}
+.brand{display:flex;align-items:center;gap:10px;min-width:245px}
+.brandmark{width:54px;height:45px;display:grid;place-items:center;position:relative}
+.brandmark svg{width:54px;height:45px}
+.brandtext{font-weight:900;font-size:26px;letter-spacing:-.8px;line-height:1.03}
+.brandtext span{color:var(--red)}
+.brandtext small{display:block;font-size:14px;letter-spacing:.3px;color:var(--navy);margin-top:4px}
+.nav{display:flex;align-items:center;gap:29px;font-size:14px;font-weight:600}
+.nav a{padding:28px 0 24px;position:relative;transition:color .2s ease}
+.nav a.active:after,.nav a:hover:after{
+  content:"";position:absolute;bottom:15px;left:0;right:0;height:3px;background:var(--red)
+}
+.nav a:hover{color:var(--red)}
+.callbox{display:flex;flex-direction:column;align-items:center;gap:4px}
+.callbtn{
+  background:var(--red);color:#fff;border:0;border-radius:5px;padding:11px 18px;
+  font-weight:800;box-shadow:0 3px 8px #e51d2a33;transition:.25s
+}
+.callbtn:hover{transform:translateY(-3px);box-shadow:0 10px 22px #e51d2a33}
+.callbox small{font-size:11px;color:var(--navy)}
+.hamb{display:none;background:none;border:0;font-size:26px;color:var(--navy);cursor:pointer}
+
+/* ===== COMMON ===== */
+.eyebrow{text-transform:uppercase;letter-spacing:1.5px;font-size:13px;font-weight:800;color:var(--red)}
+.section{padding:72px 0}
+.section-head{text-align:center;max-width:760px;margin:0 auto 38px}
+.section-head .eyebrow{margin-bottom:8px}
+.section-head h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin-bottom:10px}
+.section-head h2 span{color:var(--red)}
+.section-head p{color:var(--muted);font-size:15px}
+
+/* ===== 1 HERO ===== */
+.services-hero{
+  min-height:570px;
+  background:
+    linear-gradient(100deg,#071f43ed 0%,#092b54dc 45%,#092b5470 100%),
+    url('https://images.unsplash.com/photo-1600518464441-9154a4adea2b?auto=format&fit=crop&w=1800&q=85')
+    center/cover;
+  color:#fff;display:flex;align-items:center;position:relative;overflow:hidden
+}
+.services-hero:after{
+  content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff22;
+  border-radius:50%;right:-150px;top:-120px;animation:floatCircle 7s ease-in-out infinite
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;position:relative;z-index:2}
+.services-hero h1{font-size:clamp(38px,5vw,60px);line-height:1.05;margin:12px 0 18px}
+.services-hero h1 span{color:#ff5360}
+.services-hero p{max-width:650px;color:#e2ebf4;font-size:17px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-btn{
+  display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;
+  border-radius:6px;background:var(--red);color:#fff;font-weight:800;
+  transition:.28s;box-shadow:0 8px 20px #0003
+}
+.hero-btn:hover{transform:translateY(-4px);box-shadow:0 14px 28px #0004}
+.hero-btn.secondary{background:#ffffff14;border:1px solid #ffffff55}
+.hero-btn.secondary:hover{background:#fff;color:var(--navy)}
+.hero-points{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+.hero-points span{
+  padding:8px 12px;border-radius:30px;background:#ffffff14;border:1px solid #ffffff30;
+  font-size:12px;transition:.25s
+}
+.hero-points span:hover{background:#fff;color:var(--navy);transform:translateY(-3px)}
+.hero-image{
+  height:390px;border-radius:16px;overflow:hidden;border:5px solid #ffffff22;
+  box-shadow:0 22px 50px #0005;transform:rotate(1deg);transition:.5s
+}
+.hero-image:hover{transform:rotate(0) translateY(-8px);box-shadow:0 28px 60px #0006}
+.hero-image img{width:100%;height:100%;object-fit:cover;transition:.7s}
+.hero-image:hover img{transform:scale(1.06)}
+
+/* ===== 2 OVERVIEW ===== */
+.overview{background:#f7faff}
+.service-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{
+  background:#fff;border:1px solid #e0e7ef;border-radius:12px;overflow:hidden;
+  box-shadow:var(--shadow);transition:transform .3s ease,box-shadow .3s ease,border-color .3s
+}
+.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);border-color:#bdcfe2}
+.service-card-img{height:205px;overflow:hidden;position:relative}
+.service-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .55s ease}
+.service-card:hover .service-card-img img{transform:scale(1.07)}
+.service-card-img .number{
+  position:absolute;top:13px;left:13px;width:38px;height:38px;border-radius:50%;
+  display:grid;place-items:center;background:var(--red);color:#fff;font-size:12px;font-weight:800;
+  box-shadow:0 5px 15px #0003
+}
+.service-body{padding:20px}
+.service-body h3{font-size:21px;margin-bottom:8px}
+.service-body p{color:var(--muted);font-size:14px;min-height:64px}
+.service-link{
+  display:inline-flex;align-items:center;gap:7px;margin-top:15px;color:var(--red);
+  font-size:13px;font-weight:800;transition:.25s
+}
+.service-card:hover .service-link{gap:13px}
+
+/* ===== 3 HOUSEHOLD ===== */
+.feature-section{background:#fff}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.feature-photo{height:420px;border-radius:14px;overflow:hidden;box-shadow:var(--shadow-hover)}
+.feature-photo img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.feature-photo:hover img{transform:scale(1.06)}
+.feature-copy h2{font-size:clamp(30px,4vw,42px);line-height:1.15;margin:10px 0 15px}
+.feature-copy h2 span{color:var(--red)}
+.feature-copy>p{color:var(--muted);margin-bottom:20px}
+.feature-list{display:grid;gap:12px}
+.feature-item{
+  display:flex;gap:13px;align-items:flex-start;padding:14px;border:1px solid var(--line);
+  border-radius:9px;transition:.28s;background:#fff
+}
+.feature-item:hover{transform:translateX(6px);box-shadow:var(--shadow);border-color:#bfd0e1}
+.feature-icon{
+  flex:0 0 40px;height:40px;border-radius:50%;background:#eaf1f9;color:var(--red);
+  display:grid;place-items:center;font-weight:900
+}
+.feature-item strong{display:block;font-size:14px;margin-bottom:2px}
+.feature-item small{display:block;color:#6b798a;font-size:12px}
+
+/* ===== 4 OFFICE ===== */
+.office{background:var(--pale)}
+.office-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.office-card{
+  background:#fff;border:1px solid var(--line);border-radius:10px;padding:23px;
+  transition:.3s;position:relative;overflow:hidden
+}
+.office-card:before{
+  content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:var(--red);
+  transform:scaleX(0);transform-origin:left;transition:.3s
+}
+.office-card:hover:before{transform:scaleX(1)}
+.office-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-hover)}
+.office-icon{
+  width:52px;height:52px;border-radius:12px;background:#eaf1f9;color:var(--navy);
+  display:grid;place-items:center;font-size:25px;margin-bottom:17px;transition:.3s
+}
+.office-card:hover .office-icon{background:var(--navy);color:#fff;transform:rotate(-5deg) scale(1.05)}
+.office-card h3{font-size:17px;margin-bottom:7px}
+.office-card p{font-size:13px;color:var(--muted)}
+
+/* ===== 5 PACKING ===== */
+.packing-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:stretch}
+.packing-main{
+  border-radius:14px;min-height:390px;overflow:hidden;position:relative;
+  background:linear-gradient(90deg,#071f43dd,#092b5480),
+  url('https://images.unsplash.com/photo-1603796846097-bee99e4a601f?auto=format&fit=crop&w=1200&q=85') center/cover;
+  color:#fff;padding:40px;display:flex;align-items:flex-end;box-shadow:var(--shadow-hover)
+}
+.packing-main h2{font-size:38px;line-height:1.1;margin:8px 0}
+.packing-main p{color:#e0eaf4;max-width:560px}
+.packing-side{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pack-box{
+  border:1px solid var(--line);border-radius:11px;padding:22px;background:#fff;
+  transition:.3s
+}
+.pack-box:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover)}
+.pack-box b{font-size:30px;color:var(--red);display:block;margin-bottom:10px}
+.pack-box h3{font-size:16px;margin-bottom:6px}
+.pack-box p{font-size:12px;color:var(--muted)}
+
+/* ===== 6 TRANSPORT ===== */
+.transport{background:#071f43;color:#fff;position:relative;overflow:hidden}
+.transport:before{
+  content:"";position:absolute;width:500px;height:500px;border-radius:50%;
+  border:1px solid #ffffff12;right:-180px;top:-180px
+}
+.transport .section-head p{color:#c7d7e8}
+.transport .section-head h2{color:#fff}
+.transport-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative}
+.transport-card{
+  border:1px solid #ffffff1c;background:#ffffff0b;border-radius:12px;padding:27px;
+  transition:.3s;backdrop-filter:blur(4px)
+}
+.transport-card:hover{transform:translateY(-8px);background:#ffffff12;border-color:#ffffff40}
+.transport-card .big-icon{font-size:42px;margin-bottom:12px;display:block}
+.transport-card h3{font-size:19px;margin-bottom:7px}
+.transport-card p{color:#c9d8e7;font-size:13px}
+
+/* ===== 7 LOADING ===== */
+.loading{background:#fff}
+.loading-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.loading-card{
+  border-radius:12px;border:1px solid var(--line);padding:27px;background:#fff;
+  transition:.3s;box-shadow:0 4px 16px #092b5408
+}
+.loading-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-hover)}
+.loading-card .circle{
+  width:55px;height:55px;border-radius:50%;background:#eaf1f9;color:var(--red);
+  display:grid;place-items:center;font-size:25px;margin-bottom:15px;transition:.3s
+}
+.loading-card:hover .circle{background:var(--red);color:#fff;transform:scale(1.08)}
+.loading-card h3{font-size:19px;margin-bottom:8px}
+.loading-card p{color:var(--muted);font-size:13px}
+
+/* ===== 8 PROCESS ===== */
+.process{background:#f2f7fc}
+.process-line{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.process-step{text-align:center;position:relative}
+.process-step:not(:last-child):after{
+  content:"→";position:absolute;right:-10px;top:23px;color:#91a3b7;font-size:25px
+}
+.process-num{
+  width:52px;height:52px;border-radius:50%;margin:0 auto 13px;
+  display:grid;place-items:center;background:var(--red);color:#fff;font-weight:900;
+  box-shadow:0 7px 18px #e51d2a30;transition:.3s
+}
+.process-step:hover .process-num{transform:translateY(-6px) scale(1.08);box-shadow:0 12px 25px #e51d2a40}
+.process-step h3{font-size:15px;margin-bottom:5px}
+.process-step p{font-size:12px;color:var(--muted)}
+
+/* ===== 9 CTA ===== */
+.cta{
+  background:
+    linear-gradient(90deg,#071f43ee,#092b54bd),
+    url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1800&q=80')
+    center/cover;
+  color:#fff;padding:65px 0
+}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.cta h2{font-size:clamp(30px,4vw,44px);line-height:1.1}
+.cta p{color:#dce7f2;margin-top:10px}
+.cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+.cta-btn{
+  display:inline-flex;align-items:center;gap:9px;padding:14px 20px;border-radius:6px;
+  background:var(--red);color:#fff;font-weight:800;transition:.28s
+}
+.cta-btn:hover{transform:translateY(-4px);box-shadow:0 12px 25px #0004}
+.cta-btn.whatsapp{background:#08a84a}
+
+/* ===== SAME FOOTER ===== */
+footer{background:#061a34;color:#dce6f1;padding:25px 0;font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.footer-links{display:flex;gap:18px}
+.footer-links a{transition:.2s}
+.footer-links a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+
+/* ===== WHATSAPP ===== */
+.whatsapp-float{
+  position:fixed;right:22px;bottom:22px;z-index:9999;width:62px;height:62px;
+  display:flex;align-items:center;justify-content:center;border-radius:50%;
+  background:#16b957;color:#fff;border:3px solid #fff;
+  box-shadow:0 7px 22px rgba(0,0,0,.24);transition:.25s
+}
+.whatsapp-float:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 13px 30px rgba(0,0,0,.3)}
+.whatsapp-float svg{width:31px;height:31px}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.delay-1{transition-delay:.08s}.delay-2{transition-delay:.16s}.delay-3{transition-delay:.24s}
+
+/* ===== MOBILE ===== */
+@media(max-width:950px){
+  .nav{gap:15px}
+  .brandtext{font-size:21px}
+  .brandtext small{font-size:12px}
+  .hero-grid{grid-template-columns:1fr .8fr;gap:25px}
+  .hero-image{height:320px}
+  .service-cards{grid-template-columns:repeat(2,1fr)}
+  .office-grid{grid-template-columns:repeat(2,1fr)}
+  .packing-grid{grid-template-columns:1fr}
+  .transport-grid{grid-template-columns:repeat(3,1fr)}
+  .process-line{grid-template-columns:repeat(3,1fr);row-gap:28px}
+  .process-step:nth-child(3):after{display:none}
+}
+@media(max-width:650px){
+  .topbar{height:68px;padding:0 15px;gap:8px}
+  .brand{min-width:0;gap:6px}
+  .brandmark{width:38px;flex:0 0 38px}
+  .brandmark svg{width:42px;height:40px}
+  .brandtext{font-size:17px;letter-spacing:-.5px}
+  .brandtext small{font-size:9px;letter-spacing:0}
+  .callbox{margin-left:auto}
+  .callbtn{padding:8px 9px;font-size:11px;white-space:nowrap}
+  .callbox small{display:none}
+  .hamb{display:block;font-size:24px;padding:4px}
+  .nav{
+    display:none;position:absolute;top:68px;left:0;right:0;background:#fff;
+    padding:10px 15px;box-shadow:0 8px 15px #0001;flex-direction:column;
+    align-items:stretch;gap:0;border-radius:0 0 12px 12px
+  }
+  .nav.open{display:flex}
+  .nav a{padding:13px 0}
+  .nav a.active:after,.nav a:hover:after{bottom:5px;right:auto;width:30px}
+
+  .services-hero{min-height:0;padding:52px 0}
+  .hero-grid{grid-template-columns:1fr;gap:25px}
+  .services-hero h1{font-size:clamp(32px,9vw,42px)}
+  .services-hero p{font-size:14px}
+  .hero-image{height:240px;transform:none}
+  .hero-image:hover{transform:translateY(-4px)}
+  .hero-points{gap:7px}
+  .hero-points span{font-size:10px;padding:7px 9px}
+
+  .section{padding:48px 0}
+  .section-head{margin-bottom:26px}
+  .section-head h2{font-size:27px}
+  .section-head p{font-size:13px}
+  .service-cards{grid-template-columns:1fr 1fr;gap:11px}
+  .service-card-img{height:135px}
+  .service-body{padding:13px}
+  .service-body h3{font-size:16px}
+  .service-body p{font-size:11px;min-height:0}
+  .service-link{font-size:11px;margin-top:10px}
+
+  .feature-grid{grid-template-columns:1fr;gap:25px}
+  .feature-photo{height:260px}
+  .feature-copy h2{font-size:28px}
+  .feature-copy>p{font-size:13px}
+  .feature-item{padding:11px}
+  .feature-item small{font-size:10px}
+
+  .office-grid{grid-template-columns:1fr 1fr;gap:11px}
+  .office-card{padding:17px}
+  .office-icon{width:44px;height:44px;font-size:20px}
+  .office-card h3{font-size:15px}
+  .office-card p{font-size:11px}
+
+  .packing-main{min-height:310px;padding:25px}
+  .packing-main h2{font-size:29px}
+  .packing-main p{font-size:12px}
+  .packing-side{gap:9px}
+  .pack-box{padding:15px}
+  .pack-box b{font-size:24px}
+  .pack-box h3{font-size:14px}
+  .pack-box p{font-size:10px}
+
+  .transport-grid{grid-template-columns:1fr;gap:11px}
+  .transport-card{padding:20px}
+  .transport-card .big-icon{font-size:34px}
+  .transport-card h3{font-size:17px}
+  .transport-card p{font-size:12px}
+
+  .loading-grid{grid-template-columns:1fr;gap:11px}
+  .loading-card{padding:20px}
+  .loading-card h3{font-size:17px}
+
+  .process-line{grid-template-columns:1fr 1fr;gap:18px 10px}
+  .process-step:not(:last-child):after{display:none}
+  .process-num{width:45px;height:45px}
+  .process-step h3{font-size:13px}
+  .process-step p{font-size:10px}
+
+  .cta{padding:45px 0}
+  .cta-inner{display:block}
+  .cta h2{font-size:30px}
+  .cta p{font-size:13px}
+  .cta-actions{margin-top:22px}
+  .cta-btn{font-size:12px;padding:12px 14px}
+
+  footer{font-size:11px}
+  .footer-row{flex-direction:column;gap:12px}
+  .footer-links{gap:12px;flex-wrap:wrap}
+
+  .whatsapp-float{width:56px;height:56px;right:14px;bottom:14px}
+  .whatsapp-float svg{width:28px;height:28px}
+}
+@media(max-width:380px){
+  .brandmark{display:none}
+  .brandtext{font-size:16px}
+  .service-cards{gap:8px}
+  .service-card-img{height:115px}
+  .service-body{padding:10px}
+  .service-body h3{font-size:14px}
+  .office-card{padding:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+
+@keyframes floatCircle{
+  0%,100%{transform:translateY(0) rotate(0)}
+  50%{transform:translateY(18px) rotate(8deg)}
+}
+</style>
+</head>
+
+<body>
+
+<!-- SAME HEADER -->
+<header class="topbar wrap">
+  <a class="brand" href="index.html" aria-label="AMBE Cargo home">
+    <span class="brandmark">
+      <svg viewBox="0 0 64 52" aria-hidden="true">
+        <path d="M3 22 32 2 61 22v27H3Z" fill="#123e70"/>
+        <path d="M10 24 32 9 54 24v18H10Z" fill="#fff"/>
+        <path d="M26 28h12v14H26z" fill="#123e70"/>
+        <path d="M15 27h8v7h-8zm26 0h8v7h-8z" fill="#e51d2a"/>
+        <path d="M31 2h9v7h-9z" fill="#e51d2a"/>
+      </svg>
+    </span>
+    <span class="brandtext">AMBE <span>CARGO</span><small>PACKERS AND MOVERS</small></span>
+  </a>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a class="active" href="services.html">Services</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+
+  <div class="callbox">
+    <a class="callbtn" href="tel:9813813848">☎ &nbsp;9813813848</a>
+    <small>Call Now / WhatsApp</small>
+  </div>
+  <button class="hamb" id="hamb" aria-label="Open menu">☰</button>
+</header>
+
+<main>
+
+<!-- 1. HERO -->
+<section class="services-hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="eyebrow" style="color:#dce9f7">AMBE CARGO SERVICES</div>
+      <h1>Moving Made <span>Simple & Reliable</span></h1>
+      <p>
+        From household shifting to office relocation, packing and transportation,
+        AMBE Cargo helps organize every important stage of your move with care,
+        planning and clear communication.
+      </p>
+
+      <div class="hero-actions">
+        <a class="hero-btn" href="tel:9813813848">Get a Moving Quote →</a>
+        <a class="hero-btn secondary" href="#all-services">Explore Services</a>
+      </div>
+
+      <div class="hero-points">
+        <span>✓ Home Relocation</span>
+        <span>✓ Office Shifting</span>
+        <span>✓ Packing Support</span>
+        <span>✓ Local & Intercity</span>
+      </div>
+    </div>
+
+    <div class="hero-image reveal delay-2">
+      <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1000&q=85" alt="Cargo transportation truck">
+    </div>
+  </div>
+</section>
+
+<!-- 2. SERVICE OVERVIEW -->
+<section class="section overview" id="all-services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">OUR SERVICES</div>
+      <h2>Complete Moving <span>Support</span></h2>
+      <p>Choose the relocation support you need — from careful packing to transportation and final unloading.</p>
+    </div>
+
+    <div class="service-cards">
+      <article class="service-card reveal">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Household furniture">
+          <span class="number">01</span>
+        </div>
+        <div class="service-body">
+          <h3>Household Shifting</h3>
+          <p>Support for moving furniture, appliances and everyday household belongings.</p>
+          <a class="service-link" href="#household">Know More →</a>
+        </div>
+      </article>
+
+      <article class="service-card reveal delay-1">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Office workspace">
+          <span class="number">02</span>
+        </div>
+        <div class="service-body">
+          <h3>Office Relocation</h3>
+          <p>Organized shifting support for furniture, equipment, files and workspaces.</p>
+          <a class="service-link" href="#office">Know More →</a>
+        </div>
+      </article>
+
+      <article class="service-card reveal delay-2">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1603796846097-bee99e4a601f?auto=format&fit=crop&w=800&q=80" alt="Packed moving boxes">
+          <span class="number">03</span>
+        </div>
+        <div class="service-body">
+          <h3>Packing & Unpacking</h3>
+          <p>Suitable packing and organized unpacking support based on your move.</p>
+          <a class="service-link" href="#packing">Know More →</a>
+        </div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Warehouse and cargo">
+          <span class="number">04</span>
+        </div>
+        <div class="service-body">
+          <h3>Loading & Unloading</h3>
+          <p>Careful handling of packed goods during loading and unloading at locations.</p>
+          <a class="service-link" href="#loading">Know More →</a>
+        </div>
+      </article>
+
+      <article class="service-card reveal delay-1">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=800&q=80" alt="Transportation vehicle">
+          <span class="number">05</span>
+        </div>
+        <div class="service-body">
+          <h3>Transportation</h3>
+          <p>Coordinated transport planning for local and other-city relocations.</p>
+          <a class="service-link" href="#transport">Know More →</a>
+        </div>
+      </article>
+
+      <article class="service-card reveal delay-2">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80" alt="Relocation planning">
+          <span class="number">06</span>
+        </div>
+        <div class="service-body">
+          <h3>Move Planning</h3>
+          <p>Discuss locations, schedules, belongings and service requirements before moving day.</p>
+          <a class="service-link" href="#process">Know More →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 3. HOUSEHOLD -->
+<section class="section feature-section" id="household">
+  <div class="wrap feature-grid">
+    <div class="feature-photo reveal">
+      <img src="serviceimg.webp">
+    </div>
+
+    <div class="feature-copy reveal delay-1">
+      <div class="eyebrow">HOUSEHOLD SHIFTING</div>
+      <h2>Your Home, <span>Handled With Care</span></h2>
+      <p>
+        Moving a home means handling many different types of belongings. Our household
+        shifting support focuses on organized preparation, careful handling and coordinated transportation.
+      </p>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span><strong>Furniture & Appliances</strong><small>Organized handling of everyday household items.</small></span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span><strong>Packing Assistance</strong><small>Suitable packing methods for different belongings.</small></span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span><strong>Loading & Unloading</strong><small>Coordinated handling at pickup and delivery locations.</small></span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span><strong>Planned Transportation</strong><small>Move details and timing discussed in advance.</small></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. OFFICE -->
+<section class="section office" id="office">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">OFFICE RELOCATION</div>
+      <h2>Shift Your Workspace <span>Without the Confusion</span></h2>
+      <p>Practical support for relocating office furniture, equipment, files and workspaces.</p>
+    </div>
+
+    <div class="office-grid">
+      <article class="office-card reveal"><div class="office-icon">▣</div><h3>Office Furniture</h3><p>Move desks, chairs, storage units and other office furniture in an organized way.</p></article>
+      <article class="office-card reveal delay-1"><div class="office-icon">▤</div><h3>Equipment & Files</h3><p>Coordinate handling of equipment, files and other workplace belongings.</p></article>
+      <article class="office-card reveal delay-2"><div class="office-icon">⌂</div><h3>Workspace Setup</h3><p>Plan the relocation stages around your agreed moving requirements.</p></article>
+      <article class="office-card reveal"><div class="office-icon">✓</div><h3>Clear Coordination</h3><p>Discuss timing, work scope and service details before the move.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PACKING -->
+<section class="section" id="packing">
+  <div class="wrap packing-grid">
+    <div class="packing-main reveal">
+      <div>
+        <div class="eyebrow" style="color:#ff7a84">PACKING & UNPACKING</div>
+        <h2>Prepare. Pack.<br>Move With Confidence.</h2>
+        <p>Organized packing and unpacking support based on the type of belongings and requirements of your relocation.</p>
+      </div>
+    </div>
+
+    <div class="packing-side">
+      <article class="pack-box reveal"><b>01</b><h3>Furniture</h3><p>Prepare larger household and office items for handling and transportation.</p></article>
+      <article class="pack-box reveal delay-1"><b>02</b><h3>Fragile Items</h3><p>Give extra attention to delicate belongings during preparation.</p></article>
+      <article class="pack-box reveal delay-2"><b>03</b><h3>Boxes & Sorting</h3><p>Organize belongings so loading and unloading can be managed efficiently.</p></article>
+      <article class="pack-box reveal"><b>04</b><h3>Unpacking</h3><p>Support organized unpacking at the destination as required.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. TRANSPORT -->
+<section class="section transport" id="transport">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" style="color:#ff7a84">TRANSPORTATION</div>
+      <h2>From Pickup Point <span>To Destination</span></h2>
+      <p>Transportation coordination for local moves and relocations to other cities.</p>
+    </div>
+
+    <div class="transport-grid">
+      <article class="transport-card reveal">
+        <span class="big-icon">🚚</span>
+        <h3>Local Moves</h3>
+        <p>Plan transportation for relocations within the local area with agreed timing and requirements.</p>
+      </article>
+      <article class="transport-card reveal delay-1">
+        <span class="big-icon">🛣</span>
+        <h3>Intercity Moves</h3>
+        <p>Coordinate transportation when your new destination is in another city.</p>
+      </article>
+      <article class="transport-card reveal delay-2">
+        <span class="big-icon">📦</span>
+        <h3>Cargo Handling</h3>
+        <p>Coordinate packed goods from loading through transportation and final unloading.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 7. LOADING -->
+<section class="section loading" id="loading">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">LOADING & UNLOADING</div>
+      <h2>Careful Handling <span>At Both Ends</span></h2>
+      <p>Loading and unloading are coordinated as important stages of the relocation process.</p>
+    </div>
+
+    <div class="loading-grid">
+      <article class="loading-card reveal">
+        <div class="circle">01</div>
+        <h3>Prepare the Items</h3>
+        <p>Ensure packed belongings are organized and ready before loading begins.</p>
+      </article>
+      <article class="loading-card reveal delay-1">
+        <div class="circle">02</div>
+        <h3>Load Carefully</h3>
+        <p>Handle packed goods with attention while moving them into the transport vehicle.</p>
+      </article>
+      <article class="loading-card reveal delay-2">
+        <div class="circle">03</div>
+        <h3>Unload at Destination</h3>
+        <p>Coordinate unloading and final handling according to the agreed service requirements.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 8. PROCESS -->
+<section class="section process" id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">HOW IT WORKS</div>
+      <h2>A Clear <span>Moving Process</span></h2>
+      <p>Five simple stages to keep your relocation organized.</p>
+    </div>
+
+    <div class="process-line">
+      <div class="process-step reveal"><div class="process-num">01</div><h3>Talk to Us</h3><p>Share your moving needs.</p></div>
+      <div class="process-step reveal delay-1"><div class="process-num">02</div><h3>Plan & Estimate</h3><p>Confirm service details.</p></div>
+      <div class="process-step reveal delay-2"><div class="process-num">03</div><h3>Pack & Prepare</h3><p>Organize belongings.</p></div>
+      <div class="process-step reveal"><div class="process-num">04</div><h3>Transport</h3><p>Coordinate the journey.</p></div>
+      <div class="process-step reveal delay-1"><div class="process-num">05</div><h3>Unload</h3><p>Complete the move.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. CTA -->
+<section class="cta">
+  <div class="wrap cta-inner">
+    <div class="reveal">
+      <div class="eyebrow" style="color:#ff7a84">READY TO MOVE?</div>
+      <h2>Planning a Move?<br>We're Here to Help.</h2>
+      <p>Tell us about your relocation requirements and get in touch with AMBE Cargo.</p>
+    </div>
+
+    <div class="cta-actions reveal delay-1">
+      <a class="cta-btn" href="tel:9813813848">☎ <span>Call Now<br><strong>9813813848</strong></span></a>
+      <a class="cta-btn whatsapp" href="https://wa.me/919813813848?text=Hello%20AMBE%20Cargo%2C%20I%20need%20a%20moving%20quote." target="_blank" rel="noopener">◉ <span>WhatsApp Us<br><strong>Get in touch</strong></span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- SAME FOOTER -->
+<footer>
+  <div class="wrap footer-row">
+    <span>© <span id="year"></span> AMBE Cargo Packers and Movers. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <span>Packers and Movers in Amritsar</span>
+  </div>
+</footer>
+
+<!-- SAME WHATSAPP BUTTON -->
+<a class="whatsapp-float" href="https://wa.me/91981381348?text=Hello%20AMBE%20Cargo%2C%20I%20need%20a%20moving%20quote." target="_blank" rel="noopener noreferrer" aria-label="Chat with AMBE Cargo on WhatsApp">
+<svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+<path d="M16 .8A15.1 15.1 0 0 0 3.1 23.7L1 31l7.5-2A15.2 15.2 0 1 0 16 .8Zm0 27.6a12.4 12.4 0 0 1-6.3-1.7l-.5-.3-4.4 1.2 1.2-4.3-.3-.5A12.4 12.4 0 1 1 16 28.4Zm6.8-9.3c-.4-.2-2.2-1.1-2.5-1.2-.3-.1-.6-.2-.8.2-.2.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.5 1.5 3.8c.2.2 2.6 4 6.3 5.6.9.4 1.6.6 2.1.7.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.1-.4-.3-.8-.5Z"/>
+</svg>
+</a>
+
+<script>
+const menu=document.getElementById('nav');
+const hamb=document.getElementById('hamb');
+
+hamb.addEventListener('click',()=>{
+  menu.classList.toggle('open');
+  hamb.textContent=menu.classList.contains('open')?'✕':'☰';
+});
+
+menu.querySelectorAll('a').forEach(a=>{
+  a.addEventListener('click',()=>{
+    menu.classList.remove('open');
+    hamb.textContent='☰';
+  });
+});
+
+document.getElementById('year').textContent=new Date().getFullYear();
+
+/* Scroll reveal */
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:.10});
+
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
